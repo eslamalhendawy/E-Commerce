@@ -8,7 +8,7 @@ import Footer from "./Footer";
 function Lookbook() {
 
   useEffect(() => {
-    document.title = `Clothy | Lookbook`;
+    document.title = `Clothey | Lookbook`;
     window.scrollTo(0, 0);
   }, []);
 

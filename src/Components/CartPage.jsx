@@ -16,7 +16,7 @@ function CartPage() {
   const [fetching, setFetching] = useState(true);
   const [totalPrice, setTotalPrice] = useState(0);
   useEffect(() => {
-    document.title = `Clothy | Cart`;
+    document.title = `Clothey | Cart`;
     window.scrollTo(0, 0);
   }, []);
 

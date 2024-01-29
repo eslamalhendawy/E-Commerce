@@ -6,7 +6,7 @@ import FeaturesSmall from "./FeaturesSmall";
 import Footer from "./Footer";
 function OurStory() {
   useEffect(() => {
-    document.title = `Clothy | Story`;
+    document.title = `Clothey | Story`;
     window.scrollTo(0, 0);
   }, []);
 

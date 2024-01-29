@@ -17,7 +17,7 @@ function Collection() {
   const [fetching, setFetching] = useState(true);
   const [numberOfPages, setNumberOfPages] = useState();
   useEffect(() => {
-    document.title = `Clothy | Collection`;
+    document.title = `Clothey | Collection`;
     window.scrollTo(0, 0);
   }, []);
 

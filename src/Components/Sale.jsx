@@ -12,7 +12,7 @@ function Sale() {
   const URL = "https://clotheyapi-production.up.railway.app/promotions/products";
 
   useEffect(() => {
-    document.title = `Clothy | Sale`;
+    document.title = `Clothey | Sale`;
     window.scrollTo(0, 0);
   }, []);
 

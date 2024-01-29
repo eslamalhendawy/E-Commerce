@@ -15,7 +15,7 @@ import Footer from "./Footer";
 
 function Homepage() {
   useEffect(() => {
-    document.title = `Clothy`;
+    document.title = `Clothey`;
     window.scrollTo(0, 0);
   }, []);
 

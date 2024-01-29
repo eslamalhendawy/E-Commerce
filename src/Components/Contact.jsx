@@ -15,7 +15,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
   useEffect(() => {
-    document.title = `Clothy | Contact`;
+    document.title = `Clothey | Contact`;
     window.scrollTo(0, 0);
   }, []);
 

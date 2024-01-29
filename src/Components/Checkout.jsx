@@ -139,7 +139,7 @@ function Checkout() {
   const [address_line2, setAddress_line2] = useState("");
   const [building_number, setBuilding_number] = useState("");
   useEffect(() => {
-    document.title = `Clothy | Checkout`;
+    document.title = `Clothey | Checkout`;
     window.scrollTo(0, 0);
   }, []);
 

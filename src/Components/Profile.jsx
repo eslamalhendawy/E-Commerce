@@ -9,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 function Profile() {
   useEffect(() => {
-    document.title = `Clothy | Profile`;
+    document.title = `Clothey | Profile`;
     window.scrollTo(0, 0);
   }, []);
   const regEmail = /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/;
@@ -27,6 +27,7 @@ function Profile() {
           },
         })
         .then((res) => {
+          console.log(res);
           setOrders(res.data);
         })
         .catch((e) => {
@@ -36,7 +37,6 @@ function Profile() {
     fetchOrders();
   }, []);
 
-  console.log(orders);
 
   const appDispatch = useContext(DispatchContext);
   const navigate = useNavigate();

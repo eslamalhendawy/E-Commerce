@@ -25,7 +25,7 @@ function Product() {
   const [count, setCount] = useState(1);
 
   useEffect(() => {
-    document.title = `Clothy | ${fetching ? "" : product.name}`;
+    document.title = `Clothey | ${fetching ? "" : product.name}`;
     window.scrollTo(0, 0);
   }, [product]);
 
