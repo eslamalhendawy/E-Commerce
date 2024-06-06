@@ -10,8 +10,8 @@ import Footer from "./Footer";
 function CartPage() {
   const navigate = useNavigate();
   const userToken = localStorage.getItem("userToken");
-  let url = "https://clotheyapi-production.up.railway.app/carts/get-one";
-  const removeURL = "https://clotheyapi-production.up.railway.app/carts/remove-from-cart?cart_item_id=";
+  let url = "https://clothey-api.onrender.com/carts/get-one";
+  const removeURL = "https://clothey-api.onrender.com/carts/remove-from-cart?cart_item_id=";
   const [products, setProducts] = useState([]);
   const [fetching, setFetching] = useState(true);
   const [totalPrice, setTotalPrice] = useState(0);

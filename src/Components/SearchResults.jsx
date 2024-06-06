@@ -13,7 +13,7 @@ import Stack from "@mui/material/Stack";
 import "react-toastify/dist/ReactToastify.css";
 
 function Collection() {
-  const URL = "https://clotheyapi-production.up.railway.app/products/filter?query=";
+  const URL = "https://clothey-api.onrender.com/products/filter?query=";
   const [products, setProducts] = useState([]);
   const [pageNumber, setPageNumber] = useState(1);
   const [numberOfPages, setNumberOfPages] = useState();

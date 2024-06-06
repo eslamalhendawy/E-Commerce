@@ -17,8 +17,8 @@ function Product() {
   const appState = useContext(StateContext);
   const navigate = useNavigate();
 
-  const URL = "https://clotheyapi-production.up.railway.app/products/get-one?id=";
-  const orderURL = "https://clotheyapi-production.up.railway.app/carts/add-to-cart";
+  const URL = "https://clothey-api.onrender.com/products/get-one?id=";
+  const orderURL = "https://clothey-api.onrender.com/carts/add-to-cart";
   const [fetching, setFetching] = useState(true);
   const userToken = localStorage.getItem("userToken");
   const [product, setProduct] = useState({});

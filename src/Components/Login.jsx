@@ -10,7 +10,7 @@ function Login() {
   const appDispatch = useContext(DispatchContext);
   const navigate = useNavigate();
 
-  const URL = "https://clotheyapi-production.up.railway.app/users/signin";
+  const URL = "https://clothey-api.onrender.com/users/signin";
   const regEmail = /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/;
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

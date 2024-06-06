@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 function Checkout() {
   const navigate = useNavigate();
   const userToken = localStorage.getItem("userToken");
-  const url = "https://clotheyapi-production.up.railway.app/orders/place-order";
+  const url = "https://clothey-api.onrender.com/orders/place-order";
   const regNumbers = /^[0-9]+$/;
   const governates = [
     {

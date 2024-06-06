@@ -9,7 +9,7 @@ import FeaturesSmall from "./FeaturesSmall";
 import Footer from "./Footer";
 
 function Sale() {
-  const URL = "https://clotheyapi-production.up.railway.app/promotions/products";
+  const URL = "https://clothey-api.onrender.com/promotions/products";
 
   useEffect(() => {
     document.title = `Clothey | Sale`;

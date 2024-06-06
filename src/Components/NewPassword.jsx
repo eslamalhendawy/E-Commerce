@@ -34,7 +34,6 @@ function NewPassword() {
       .patch(URL, { email, new_password: password })
       .then((res) => {
         navigate("/login");
-        loc
       })
       .catch((e) => {
         console.log(e);

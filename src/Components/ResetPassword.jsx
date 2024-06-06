@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 function ResetPassword() {
   const navigate = useNavigate();
-  const url = "https://clotheyapi-production.up.railway.app/users/send-reset-code";
+  const url = "https://clothey-api.onrender.com/users/send-reset-code";
   const regEmail = /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/;
   const [email, setEmail] = useState("");
   const attemptReset = async () => {
@@ -22,10 +22,12 @@ function ResetPassword() {
     await axios
       .post(url, { email })
       .then((res) => {
+        console.log(res);
         toast.info("Check Your Email");
         navigate("/reset-code");
       })
       .catch((e) => {
+        console.log(e);
         toast.error("Email Not Found In Our Database");
       });
   };

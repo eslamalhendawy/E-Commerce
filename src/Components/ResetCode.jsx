@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 function ResetCode() {
   const navigate = useNavigate();
-  const url = "https://clotheyapi-production.up.railway.app/users/confirm-reset-code";
+  const url = "https://clothey-api.onrender.com/users/confirm-reset-code";
   const [code, setCode] = useState("");
 
   const confirmCode = async () => {

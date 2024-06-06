@@ -9,8 +9,8 @@ function Cart() {
   const [openCart, setOpen] = useState(false);
   const [cartItems, setCartItems] = useState(null);
   const userToken = localStorage.getItem("userToken");
-  const url = "https://clotheyapi-production.up.railway.app/carts/get-one";
-  const removeURL = "https://clotheyapi-production.up.railway.app/carts/remove-from-cart?cart_item_id=";
+  const url = "https://clothey-api.onrender.com/carts/get-one";
+  const removeURL = "https://clothey-api.onrender.com/carts/remove-from-cart?cart_item_id=";
 
   const toggleCart = (openStatus) => (event) => {
     if (event.type === "keydown" && (event.key === "Tab" || event.key === "Shift")) {

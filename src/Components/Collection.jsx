@@ -27,21 +27,21 @@ function Collection() {
     let decodedURL = decodeURIComponent(currentURL);
     let parts = decodedURL.split("/");
     const type = parts[parts.length - 1];
-    let URL = `https://clotheyapi-production.up.railway.app/products/filter?page=${pageNumber}&size=12`;
+    let URL = `https://clothey-api.onrender.com/products/filter?page=${pageNumber}&size=12`;
     if (type == "men") {
-      URL = `https://clotheyapi-production.up.railway.app/products/filter?type_id=1&page=${pageNumber}&size=12`;
+      URL = `https://clothey-api.onrender.com/products/filter?type_id=1&page=${pageNumber}&size=12`;
       document.title = `Clothy | Men's Collection`;
     }
     if (type == "women") {
-      URL = `https://clotheyapi-production.up.railway.app/products/filter?type_id=2&page=${pageNumber}&size=12`;
+      URL = `https://clothey-api.onrender.com/products/filter?type_id=2&page=${pageNumber}&size=12`;
       document.title = `Clothy | Women's Collection`;
     }
     if (type == "unisex") {
-      URL = `https://clotheyapi-production.up.railway.app/products/filter?type_id=3&page=${pageNumber}&size=12`;
+      URL = `https://clothey-api.onrender.com/products/filter?type_id=3&page=${pageNumber}&size=12`;
       document.title = `Clothy | Unisex Collection`;
     }
     if (type == "children") {
-      URL = `https://clotheyapi-production.up.railway.app/products/filter?type_id=4&page=${pageNumber}&size=12`;
+      URL = `https://clothey-api.onrender.com/products/filter?type_id=4&page=${pageNumber}&size=12`;
       document.title = `Clothy | Children's Collection`;
     }
     const fetchProducts = async () => {

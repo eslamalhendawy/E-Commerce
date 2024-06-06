@@ -10,7 +10,7 @@ function Signup() {
   const appDispatch = useContext(DispatchContext);
   const navigate = useNavigate();
   
-  const URL = "https://clotheyapi-production.up.railway.app/users/signup";
+  const URL = "https://clothey-api.onrender.com/users/signup";
   const regCharectars = /^[A-Za-z\s]*$/;
   const regNumbers = /^[0-9]+$/;
   const regEmail = /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/;

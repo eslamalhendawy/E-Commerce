@@ -14,8 +14,8 @@ function Profile() {
   }, []);
   const regEmail = /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/;
   const regNumbers = /^[0-9]+$/;
-  const url = "https://clotheyapi-production.up.railway.app/users/update";
-  const orderURL = "https://clotheyapi-production.up.railway.app/orders/my-orders";
+  const url = "https://clothey-api.onrender.com/users/update";
+  const orderURL = "https://clothey-api.onrender.com/orders/my-orders";
   const [orders, setOrders] = useState(null);
 
   useEffect(() => {
